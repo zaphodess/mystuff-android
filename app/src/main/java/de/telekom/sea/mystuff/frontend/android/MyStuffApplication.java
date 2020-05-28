@@ -4,15 +4,15 @@ import lombok.Getter;
 import timber.log.Timber;
 public class MyStuffApplication extends Application {
     @Getter
-    private MyStuffContext stuffContext;
+    private MyStuffContext myStuffContext;
     public static MyStuffApplication instance;
     @Override
     public void onCreate() {
         super.onCreate();
         Timber.d("onCreate: Enter");
         instance = this;
-        stuffContext = new MyStuffContext();
-        stuffContext.initWithApplication(this);
+        myStuffContext = new MyStuffContext();
+        myStuffContext.initWithApplication(this);
         initTimber();
     }
     @Override

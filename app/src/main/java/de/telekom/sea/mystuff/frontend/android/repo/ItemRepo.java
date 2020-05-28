@@ -3,6 +3,7 @@ package de.telekom.sea.mystuff.frontend.android.repo;
 import java.util.List;
 
 import androidx.lifecycle.LiveData;
+
 import de.telekom.sea.mystuff.frontend.android.api.ApiResponse;
 import de.telekom.sea.mystuff.frontend.android.api.ItemApi;
 import de.telekom.sea.mystuff.frontend.android.model.Item;
@@ -15,7 +16,7 @@ public class ItemRepo {
         this.api = api;
     }
 
-    public LiveData<ApiResponse<List<Item>>>getAll(){
+    public LiveData<ApiResponse<List<Item>>> getAll() {
         return this.api.getAll();
     }
 }
