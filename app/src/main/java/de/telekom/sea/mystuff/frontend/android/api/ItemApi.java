@@ -8,6 +8,7 @@ import retrofit2.http.Path;
 
 public interface ItemApi {
 
-    @GET("/api/v1/items/{id}")
-    public LiveData<ApiResponse<List<Item>>>getAll();
+    @GET("/api/v1/items")
+    public LiveData<ApiResponse<List<Item>>>getAllItems();
+
 }

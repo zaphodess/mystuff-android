@@ -16,7 +16,7 @@ public class ItemRepo {
         this.api = api;
     }
 
-    public LiveData<ApiResponse<List<Item>>> getAll() {
-        return this.api.getAll();
+    public LiveData<ApiResponse<List<Item>>> getAllItems() {
+        return this.api.getAllItems();
     }
 }

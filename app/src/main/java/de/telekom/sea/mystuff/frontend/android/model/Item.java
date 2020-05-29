@@ -2,6 +2,7 @@ package de.telekom.sea.mystuff.frontend.android.model;
 
 import java.time.LocalDate;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
